@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Kode+Mono:wght@500&display=swap');
+
+@layer base {
+  body {
+    @apply font-mono
+  }
+  h2 {
+    @apply text-4xl font-display;
+  }
+  input {
+    @apply w-full border-b py-4 focus:outline-none focus:border-slate-800 transition duration-300;
+  }
+  button {
+    @apply border rounded-full px-2 py-2;
+  }
+}
+
+@layer components {
+  .brand {
+    @apply text-2xl font-bold bg-gradient-to-r from-rose-400 to-indigo-500 bg-clip-text text-transparent;
+  }
+  .card {
+    @apply border border-black rounded-2xl p-10 h-[280px];
+  }
+}
